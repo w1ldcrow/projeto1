@@ -2,6 +2,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 body,
 html {
   cursor: none;
@@ -11,15 +12,18 @@ html {
   background-color: #e0dad5;
   overflow: hidden;
 }
+
 svg {
   display: none;
 }
+
 .page {
   width: 100%;
   height: 100%;
   background-color: #0f0d0b;
   display: block;
 }
+
 .page-bg {
   width: 100%;
   height: 100%;
@@ -43,20 +47,24 @@ svg {
   height: 100%;
   mix-blend-mode: hard-light;
 }
+
 .container {
   width: 100%;
   height: 100%;
   display: table;
   z-index: 100;
 }
+
 .child {
   display: table-row;
 }
+
 .content {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
+
 .HoverButton {
   position: relative;
   display: inline-block;
@@ -64,6 +72,7 @@ svg {
   padding: 0 2%;
   overflow: hidden;
 }
+
 .HoverButton .bg {
   pointer-events: none;
   position: absolute;
@@ -73,6 +82,7 @@ svg {
   display: block;
   transform: translateX(-112%) skew(-10deg);
 }
+
 h1 {
   color: #fffafdd2;
   position: relative;
@@ -83,6 +93,7 @@ h1 {
   font-size: 11vmax;
   mix-blend-mode: difference;
 }
+
 .images {
   position: absolute;
   left: 50%;
@@ -91,9 +102,11 @@ h1 {
   z-index: 10;
   pointer-events: none;
 }
+
 .images .big {
   width: 36vmax;
 }
+
 .images .small {
   width: 27vmax;
   position: absolute;
@@ -101,6 +114,7 @@ h1 {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 .Cursor {
   pointer-events: none;
   position: fixed;
@@ -113,6 +127,7 @@ h1 {
   z-index: 1000;
   filter: url("#goo");
 }
+
 .Cursor span {
   position: absolute;
   display: block;
@@ -123,18 +138,21 @@ h1 {
   transform-origin: center center;
   transform: translate(-50%, -50%);
 }
+
 .stamp {
   position: absolute;
   right: 6vmax;
   top: 6vmax;
   z-index: 10;
 }
+
 .stamp p {
   color: #ffffff;
   font-size: 2vmax;
   font-family: monospace;
   margin: 0;
 }
+
 .stamp .circle {
   position: absolute;
   width: 1px;
@@ -144,8 +162,9 @@ h1 {
   top: 50%;
   background-color: transparent;
   -webkit-animation: rotating 9.5s linear infinite;
-          animation: rotating 9.5s linear infinite;
+  animation: rotating 9.5s linear infinite;
 }
+
 .stamp .circle span {
   font-family: monospace;
   font-weight: bold;
@@ -158,90 +177,119 @@ h1 {
   bottom: 0;
   transform-origin: bottom center;
 }
+
 .char1 {
   transform: rotate(13deg);
 }
+
 .char2 {
   transform: rotate(26deg);
 }
+
 .char3 {
   transform: rotate(39deg);
 }
+
 .char4 {
   transform: rotate(52deg);
 }
+
 .char5 {
   transform: rotate(65deg);
 }
+
 .char6 {
   transform: rotate(78deg);
 }
+
 .char7 {
   transform: rotate(91deg);
 }
+
 .char8 {
   transform: rotate(104deg);
 }
+
 .char9 {
   transform: rotate(117deg);
 }
+
 .char10 {
   transform: rotate(130deg);
 }
+
 .char11 {
   transform: rotate(143deg);
 }
+
 .char12 {
   transform: rotate(156deg);
 }
+
 .char13 {
   transform: rotate(169deg);
 }
+
 .char14 {
   transform: rotate(182deg);
 }
+
 .char15 {
   transform: rotate(195deg);
 }
+
 .char16 {
   transform: rotate(208deg);
 }
+
 .char17 {
   transform: rotate(221deg);
 }
+
 .char18 {
   transform: rotate(234deg);
 }
+
 .char19 {
   transform: rotate(247deg);
 }
+
 .char20 {
   transform: rotate(260deg);
 }
+
 .char21 {
   transform: rotate(273deg);
 }
+
 .char22 {
   transform: rotate(286deg);
 }
+
 .char23 {
   transform: rotate(299deg);
 }
+
 .char24 {
   transform: rotate(312deg);
 }
+
 .char25 {
   transform: rotate(325deg);
 }
+
 .char26 {
   transform: rotate(338deg);
 }
+
 .char27 {
   transform: rotate(351deg);
 }
+
 .char28 {
   transform: rotate(364deg);
 }
+
 .line,
 .line-vertical,
 .line-horizontal,
@@ -253,6 +301,7 @@ h1 {
   position: absolute;
   background-color: #ede8e5;
 }
+
 .line-vertical,
 .lines .line3,
 .lines .line4,
@@ -261,6 +310,7 @@ h1 {
   height: 100%;
   top: 0;
 }
+
 .line-horizontal,
 .lines .line1,
 .lines .line2 {
@@ -268,6 +318,7 @@ h1 {
   height: 2px;
   left: 0;
 }
+
 .lines {
   position: absolute;
   width: 100%;
@@ -276,43 +327,52 @@ h1 {
   top: 0;
   z-index: 2;
 }
+
 .lines .line1 {
   top: 36vh;
 }
+
 .lines .line2 {
   top: 64vh;
 }
+
 .lines .line3 {
   left: 22vw;
 }
+
 .lines .line4 {
   left: 78vw;
 }
+
 .lines .line5 {
   left: 50vw;
 }
-.icons a {
- text-decoration: none;
- color: #0f0d0b;
-}
-.icons {
-  margin: 5px
-  
 
+.icons a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #0f0d0b;
+}
+
+.icons {
+  margin: 3px
 }
 
 @-webkit-keyframes rotating {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 @keyframes rotating {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
