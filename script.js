@@ -16,13 +16,6 @@ class HoverButton {
 
 
 
-
-
-
-
-
-
-
     () => {
       this.hoverInAnim();
     });_defineProperty(this, "hoverInAnim",
