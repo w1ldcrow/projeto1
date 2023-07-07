@@ -76,7 +76,7 @@ class Dot {
     this.anglespeed = 0.05;
     this.x = 0;
     this.y = 0;
-    this.scale = 1 - 0.05 * index;
+    this.scale = .9 - 0.05 * index;
     this.range = width / 2 - width / 2 * this.scale + 2;
     this.limit = width * 0.75 * this.scale;
     this.element = document.createElement("span");
@@ -87,8 +87,8 @@ class Dot {
   lock() {
     this.lockX = this.x;
     this.lockY = this.y;
-    this.angleX = Math.PI * 2 * Math.random();
-    this.angleY = Math.PI * 2 * Math.random();
+    this.angleX = Math.PI * 3 * Math.random();
+    this.angleY = Math.PI * 3 * Math.random();
   }
 
   draw(delta) {

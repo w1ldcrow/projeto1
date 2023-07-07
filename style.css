@@ -213,7 +213,10 @@ cursor: inherit;
 color:#fffafdd2 
 }
 
+.circle {
+padding:0%
 
+}
 .char1 {
   transform: rotate(20deg);
 }
