@@ -53,12 +53,19 @@ svg {
   mix-blend-mode: hard-light;
 }
 
+.itens {
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+position: fixed
+}
 
 .container {
   width: 100%;
   height: 100%;
   display: flex;
-  z-index: 100;
+  z-index: 3;
 
 }
 
@@ -227,6 +234,7 @@ h1 {
   padding-inline: 0.3%;
   cursor: none
 }
+
 a:hover {
   color: rgba(114, 11, 109, 0.658);
   filter: blur(0.8px) 
@@ -249,7 +257,7 @@ h4 {
 }
 .typew {
   max-width: fit-content;
-  margin-bottom: -9%;
+  margin-bottom: -15%;
 
 }
 @keyframes typing {
