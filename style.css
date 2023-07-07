@@ -355,7 +355,12 @@ h1 {
 }
 
 .icons {
-  margin: 3px
+  text-align: center;
+}
+
+a:hover {
+  color: rgba(114, 11, 109, 0.658);
+
 }
 
 @-webkit-keyframes rotating {
