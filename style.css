@@ -213,14 +213,14 @@ h1 {
 .icons a {
   font-size: 24px;
   text-decoration: none;
-  color: #0f0d0b;
+  color: #1d1d1c;
   padding-inline: 0.3%;
   cursor: none
 }
 
 .icons2 {
   text-align: center;
-  background-color: #0f0d0b;
+  background-color: #1d1d1c;
   height: 29px;
   display: flex;
   align-items: center;
