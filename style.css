@@ -13,9 +13,6 @@ html {
   overflow: hidden;
 }
 
-svg {
-  display: none;
-}
 
 .page {
   width: 100%;
@@ -57,15 +54,26 @@ svg {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row-reverse;
-  z-index: 3;
+  flex-direction: row;
+  z-index: 1;
 }
 
 .flex {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  max-width: 35%;
+  gap: 3%;
+  position: relative;
+}
+
+.particles-js-canvas-el {
+  position: absolute;
+}
+.text {
+display:flex;
+flex-grow: 1;
 }
 
 .container-home {
@@ -77,6 +85,7 @@ flex-direction: column;
 }
 .child {
   display: table-row;
+  z-index: 2;
 }
 
 .content {
@@ -115,6 +124,7 @@ h1 {
   font-size: 11vmax;
   mix-blend-mode: difference;
 }
+
 
 .Cursor {
   pointer-events: none;
@@ -166,6 +176,10 @@ h1 {
   animation: rotating 15s linear infinite;
 }
 
+svg {
+  display: none;
+}
+
 .stamp .circle span {
   font-family: monospace;
   font-weight: bold;
@@ -180,12 +194,20 @@ h1 {
 }
 
 .icons {
-  text-align: center;
   background-color: #fffafdd2;
   height: 29px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+  transition: color 1s;
+  position:sticky;
+  top: 0;
+
+}
+
+.child img {
+  filter: drop-shadow(2px 2px 2px #000);
 }
 
 .icons a {
@@ -197,13 +219,19 @@ h1 {
 }
 
 .icons2 {
-  text-align: center;
   background-color: #1d1d1c;
   height: 29px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+  max-width: 100%;
+  height: auto;
+  transition: color 1s;
+  position:sticky;
+  top: 0;
 }
+
 
 .icons2 a {
   font-size: 24px;
@@ -218,34 +246,13 @@ a:hover {
   filter: blur(0.8px) 
 }
 
-h4 {
-  color: #1d1d1c;
-  position: relative;
-  text-align: center;
-  font-weight: normal;
+#typew {
+  display: flex;
   font-family: monospace;
-  z-index: 2;
+  color: #1d1d1c;
+  z-index: 5;
   font-size: 24px;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: .10em solid rgb(31, 30, 30);
-  animation: 
-  typing 3.5s steps(30, end),
-  blink-caret .5s step-end infinite;
-}
-.typew {
-  max-width: fit-content;
-  margin-bottom: -15%;
-
-}
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgb(27, 27, 27) }
+  min-height: 28px;
 }
 
 a {
@@ -255,9 +262,14 @@ font-family: monospace;
 cursor: inherit;
 }
 
+#particles.js {
+  z-index: 100;
+
+}
 .corvo a:hover {
 color:#fffafdd2 
 }
+
 
 .circle {
 padding:0%

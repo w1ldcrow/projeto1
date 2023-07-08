@@ -9,12 +9,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js" defer></script>
+	<script src="typewritter.js" defer></script>
 
 </head>
 
 <body>
-	
-	<!-- partial:index.partial.html -->
 	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
 		<defs>
 			<filter id="goo">
@@ -26,7 +26,7 @@
 		</defs>
 	</svg>
 
-
+	
 	<div class="icons2">
 		<a href="index.html" target="_self">
 		<i class="fa fa-home"></i>
@@ -41,16 +41,15 @@
 
 
 	<div class="page2">
-
 		<div class="container">
-      <div class="text">
-      </div>
-      <div class="flex">
-        <div class="typew"><h4>_Hyago Bitencourt</h4>
-                </div>
+			<div class="text"></div>
+      		<div class="flex" id="particles-js">
+       		 <div id="typew">
+        	</div>
 					<div class="child">
 						<div class="content2">
-								<img src="assets/hyago.png" alt="me" width="672" height="950,4">
+					
+								<img src="assets/hyago.png" alt="me" width="100%" height="100%">
 									<div>
 										<div id="button" class="HoverButton">
 						</div>
@@ -58,7 +57,7 @@
 				</div>
 			</div>
       </div>
-		</div>
+	</div>
 
 
 		<div class="stamp">
@@ -71,11 +70,16 @@
 	<div id="cursor" class="Cursor">
 	</div>
 	
-	<!-- partial -->
+
+
+	
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script>
 	<script src="./script.js"></script>
+	<script src="particles.js" ></script>
 
-
+<script>
+	particlesJS.load('particles-js', 'particles.json');
+</script>
 
 </body>
 

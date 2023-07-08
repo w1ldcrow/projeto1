@@ -1,3 +1,6 @@
+
+
+
 function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}const cursor = document.getElementById("cursor");
 const amount = 20;
 const sineDots = Math.floor(amount * 0.3);
@@ -10,6 +13,7 @@ let timeoutID;
 let idle = false;
 let hoverButton;
 let hoverTL;
+
 
 class HoverButton {
   constructor(id) {_defineProperty(this, "onMouseEnter",
@@ -61,6 +65,7 @@ class HoverButton {
         } });
 
     });this.hovered = false;this.animatingHover = false;this.forceOut = false;this.timing = 0.65;this.el = document.getElementById(id);this.bg = this.el.getElementsByClassName("bg")[0];this.el.addEventListener("mouseenter", this.onMouseEnter);this.el.addEventListener("mouseleave", this.onMouseLeave);}}
+    
 
 
 class Dot {
