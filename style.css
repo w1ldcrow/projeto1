@@ -88,11 +88,15 @@ z-index: 001000;
 }
 
 #element6 {
-  grid-area: six
+  grid-area: six;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 #element7 {
   grid-area: seven;
-  text-align: center;
+
 }
 
 .page-bg {
@@ -124,7 +128,7 @@ z-index: 001000;
   min-height: 100.4vh;
   display: flex;
   flex-direction: row;
-  z-index: 1;
+  
 }
 
 .flex {
@@ -146,7 +150,6 @@ z-index: 001000;
 display: grid;
 width: 100%;
 scroll-snap-align: start;
-text-align: center;
 display: grid;
 font-weight: 400;
 font-family: monospace;
@@ -156,10 +159,10 @@ grid-template-rows: repeat(5,1fr);
 gap: 1px;
 grid-template-areas: 
 ". . . . . . ."
+". . six six six . ."
+". . six six six . ."
+" . . six six six . ."
 ". . . . . . ."
-". . six six . .  ."
-" . . six six . . ."
-". . . . . seven ."
 }
 
 
