@@ -10,28 +10,46 @@ html {
   height: 100%;
   font-family: monospace;
   background-color: #fffafdd2;
-  overflow: hidden;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
 }
 
+body::-webkit-scrollbar{
+display: none;
+}
+
+.about{
+  scroll-snap-type: y mandatory;
+  height:100vh;
+}
 
 .page {
   width: 100%;
-  height: 100%;
+  height: 97vh;
   background-color: #1d1d1c;
   display: block;
 }
+
 .page2 {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #fffafdd2;
   display: block;
+  scroll-snap-align: start;
+}
+.page3 {
+  height: 100vh;
+  background-color: #fffafdd2;
+  display: block;
+  scroll-snap-align: start;
 }
 .page-bg {
   width: 100%;
   height: 100%;
   display: block;
   position: absolute;
-  overflow: hidden;
   top: 0;
   left: 0;
   z-index: 1;
@@ -51,8 +69,8 @@ html {
 }
 
 .container {
-  width: 100%;
-  height: 100%;
+  width: 101%;
+  height: 101%;
   display: flex;
   flex-direction: row;
   z-index: 1;
@@ -63,6 +81,7 @@ html {
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
+  max-height: 101vh;
   max-width: 35%;
   gap: 3%;
   position: relative;
@@ -71,6 +90,7 @@ html {
 .particles-js-canvas-el {
   position: absolute;
 }
+
 .text {
 display:flex;
 flex-grow: 1;
@@ -98,6 +118,16 @@ flex-grow: 1;
 .HoverButton {
   position: relative;
   display: inline-block;
+  z-index: 20;
+  padding: 0 2%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+
+.HoverButton2 {
+  position: relative;
+  display: none;
   z-index: 20;
   padding: 0 2%;
   overflow: hidden;
@@ -195,19 +225,19 @@ svg {
 
 .icons {
   background-color: #fffafdd2;
-  height: 29px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  transition: color 1s;
-  position:sticky;
+  position: sticky;
   top: 0;
+  height: 3vh;
 
 }
 
 .child img {
   filter: drop-shadow(2px 2px 2px #000);
+  position: relative;
 }
 
 .icons a {
@@ -220,16 +250,15 @@ svg {
 
 .icons2 {
   background-color: #1d1d1c;
-  height: 29px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  max-width: 100%;
-  height: auto;
-  transition: color 1s;
-  position:sticky;
-  top: 0;
+  height: 3vh;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+
 }
 
 
@@ -243,7 +272,8 @@ svg {
 
 a:hover {
   color: rgba(114, 11, 109, 0.658);
-  filter: blur(0.8px) 
+  filter: blur(0.8px); 
+  transition: color 1s;
 }
 
 #typew {
@@ -263,7 +293,7 @@ cursor: inherit;
 }
 
 #particles.js {
-  z-index: 100;
+  z-index: 4;
 
 }
 .corvo a:hover {
