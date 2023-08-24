@@ -7,11 +7,11 @@ var typewriter = new Typewriter(app, {
 
 typewriter
   .pauseFor(2500)
-  .typeString('Hyago Bitencourt')
+  .typeString('xxx')
   .pauseFor(300)
   .deleteChars(16)
-  .typeString('Hyago Bitencourt')
-  .typeString('<strong> baphomé</strong>')
+  .typeString('xxxx')
+  .typeString('<strong> xxxx</strong>')
   .pauseFor(1000)
   .start();
 
